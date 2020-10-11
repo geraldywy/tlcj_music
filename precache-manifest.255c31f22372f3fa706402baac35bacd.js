@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e4623e1652d92a70214da5ece79ad569",
+    "revision": "2d49e74c5cdae85d569789a455b1ad62",
     "url": "/tlcj_music/index.html"
   },
   {
-    "revision": "70cc32b2d92983274e20",
+    "revision": "091642e07df22a0a0816",
     "url": "/tlcj_music/static/css/main.6a242927.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tlcj_music/static/js/2.fe6c0601.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "70cc32b2d92983274e20",
-    "url": "/tlcj_music/static/js/main.bbfed0ad.chunk.js"
+    "revision": "091642e07df22a0a0816",
+    "url": "/tlcj_music/static/js/main.c3e9e26f.chunk.js"
   },
   {
     "revision": "190ee5a6f5bf992731ca",
