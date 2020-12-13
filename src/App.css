@@ -104,3 +104,68 @@
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
+
+/* .content {
+  position: relative
+} */
+
+.appear {
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appearPartial {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+.appear {
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+#brand {
+  opacity: 0.5;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 150px;
+  top: 50px;
+  margin: auto;
+  animation-name: appearPartial;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.homePanel {
+  opacity: 0.5;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 60%;
+  top: 300px;
+  color: white;
+  border: 2px solid red;
+  background: rgba(0, 0, 0, 0.8);
+  margin: auto;
+  animation-name: appearPartial;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
