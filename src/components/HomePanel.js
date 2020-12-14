@@ -10,10 +10,10 @@ const HomePanel = (props) => {
     return (
         <div className="homePanel">
             <div className={props.mobile ? "homeNavMobile" : "homeNav"}>
-                <Link to="/music" style={{textDecoration: "none", color: "white"}}><span id="musicLink">Music</span></Link>
-                <span id="blogLink">Blog</span>
-                <span id="aboutLink">About</span>
-                <span id="socialsLink">Socials</span>
+                <Link to="/music" style={{textDecoration: "none", color: "white"}}><span className="panelItem" id="musicLink">Music</span></Link>
+                <span className="panelItem" id="blogLink">Blog</span>
+                <span className="panelItem" id="aboutLink">About</span>
+                <span className="panelItem" id="socialsLink">Socials</span>
             </div>
             
             <div className="introText" style={{fontSize: props.mobile ? "10pt": "12pt", lineHeight: props.mobile ? "1.3": "1.6"}}>

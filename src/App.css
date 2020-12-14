@@ -153,17 +153,6 @@
   animation-fill-mode: forwards;
 }
 
-.musicPage {
-  background: url("./images/pic2.jpg");
-  background-size: cover;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
 .homePanel {
   opacity: 0.5;
   z-index: 1;
@@ -201,7 +190,7 @@
   background-color: rgba(0,0,0, 0.1);
 }
 
-span {
+.panelItem {
   margin-left: 4%;
   margin-right: 4%;
   margin-top: 15px;
@@ -265,4 +254,69 @@ transition: all ease 0.8s;
   box-shadow: inset 100px 0 0 0 #db9ba0;
   color: rgb(0, 0, 0);
   cursor: pointer;
+}
+
+.musicPage {
+  background: url("./images/pic2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%; 
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  /* background-size: cover;
+  
+  
+  
+  */
+}
+
+.musicPageContent {
+  color: white;
+  position: relative;
+  transform: translateY(-50%);
+  margin-top: 30vh;
+}
+
+
+/****/
+
+.videoContainer {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15vh;
+}
+
+.videoText {
+  padding-left: 2vw;
+  font-size: 11px;
+  display: block; 
+}
+
+#videoTitle {
+  margin-top: 20px;
+  font-size: 15pt;
+}
+
+video {
+  margin-left: 20%;
+  vertical-align: top; 
+  display: inline-block;
+  max-width: 40vw;
+  max-height: 30vh;
+  border: .1px solid white
+}
+
+.center {  
+  position: relative;
+  top: 50%;
+}
+.btnText {
+  vertical-align: middle; 
+  display: inline-block;
 }
