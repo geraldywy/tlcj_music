@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/music" component={MusicPage}>
+        <Route path="/music">
           <MusicPage />
         </Route>
         <Route exact path="/">

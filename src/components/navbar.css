@@ -4,7 +4,7 @@
     animation-fill-mode: forwards;
 }
 
-#brand {
+#brandTopLeft {
     z-index: 1;
     display: flex;
     position: fixed;
@@ -32,70 +32,133 @@
     animation-fill-mode: forwards;
 }
 
-span {
+.navbarMobile {
+    color: white;
+    font-size: 12pt;
+    padding: 2px;
+    position: fixed;
+    justify-content: flex-end;
+    z-index: 1; /* stack order top */
+    display: flex;
+    right: 0;
+    justify-content: center;
+    animation-name: appear;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.navbarItem {
     margin-right: 10%;
-    padding-right: 15px;
+    padding-right: 3%;
     margin-top: 15px;
     padding-top: 10px;
     letter-spacing: 1px;
     font-family: Cambria;
 }
 
-#musicLink {
+.navbarMobileItem {
+    margin-right: 10%;
+    position: absolute;
+    display: block;
+    margin-top: 15px;
+    padding-top: 10px;
+    letter-spacing: 1px;
+    font-family: Cambria;
+}
+
+#musicLinkTop {
     box-shadow: inset 0 0 0 0 #024112;
 	-webkit-transition: all ease 0.8s;
 	-moz-transition: all ease 0.8s;
 	transition: all ease 0.8s;
 }
 
-#musicLink:hover {
+.navbarMobileItem#musicLinkTop {
+    box-shadow: inset 0 0 0 0 #024112;
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+    margin-right: 30vw;
+}
+
+#musicLinkTop:hover {
     text-decoration: underline;
     box-shadow: inset 100px 0 0 0 #c6eee5;
     color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
-#blogLink {
+#blogLinkTop {
     box-shadow: inset 0 0 0 0 #0770e9;
 	-webkit-transition: all ease 0.8s;
 	-moz-transition: all ease 0.8s;
 	transition: all ease 0.8s;
 }
 
-#blogLink:hover {
+.navbarMobileItem#blogLinkTop {
+    box-shadow: inset 0 0 0 0 #0770e9;
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+    margin-right: 30vw;
+    margin-top: 4.7vh;
+}
+
+#blogLinkTop:hover {
     text-decoration: underline;
     box-shadow: inset 100px 0 0 0 #a7a8ee;
     color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
-#aboutLink {
+#aboutLinkTop {
     box-shadow: inset 0 0 0 0 #a76502;
 	-webkit-transition: all ease 0.8s;
 	-moz-transition: all ease 0.8s;
 	transition: all ease 0.8s;
 }
 
-#aboutLink:hover {
+.navbarMobileItem#aboutLinkTop {
+    box-shadow: inset 0 0 0 0 #a76502;
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+    margin-right: 30vw;
+    margin-top: 7.5vh;
+}
+
+#aboutLinkTop:hover {
     text-decoration: underline;
     box-shadow: inset 100px 0 0 0 #dbc19b;
     color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
-#socialsLink {
+.navbarItem#socialsLinkTop {
     box-shadow: inset 0 0 0 0 #410205;
 	-webkit-transition: all ease 0.8s;
 	-moz-transition: all ease 0.8s;
 	transition: all ease 0.8s;
-    margin-right: 40vh;
+    padding-right: 20vw;
 }
 
-#socialsLink:hover {
+.navbarMobileItem#socialsLinkTop {
+    box-shadow: inset 0 0 0 0 #410205;
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+    margin-right: 30vw;
+    margin-top: 10.5vh;
+}
+
+#socialsLinkTop:hover {
     text-decoration: underline;
     box-shadow: inset 100px 0 0 0 #db9ba0;
     color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
-
+.musicPageContent {
+    margin-top: 200px;
+    text-align: center;
+}
