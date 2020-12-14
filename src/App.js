@@ -1,13 +1,28 @@
 import React from "react"
 import Home from "./components/Home"
-import Test from "./components/Test"
+import MusicPage from "./components/MusicPage"
+
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 import "./App.css"
 
 function App() {
   return (
-    
-    <Home />
+    <Router>
+      <Switch>
+        <Route path="/music" component={MusicPage}>
+          <MusicPage />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
     
   );
 }

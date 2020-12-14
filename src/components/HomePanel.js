@@ -1,21 +1,32 @@
-import React from "react"
-
-
+import React from "react";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 
 const HomePanel = (props) => {
-    // to do: an accordian
-    // hamburger icon if props.mobile, accordian effect
-    // for desktop, a row of buttons
     return (
         <div className="homePanel">
-            Reprehenderit qui elit aliqua est nostrud do quis culpa reprehenderit nulla laboris reprehenderit. Irure eu proident excepteur deserunt occaecat Lorem nostrud dolor id. Occaecat reprehenderit ad in aliquip velit adipisicing aute exercitation. Culpa dolore esse esse cillum aliquip sit velit cillum Lorem non id consectetur. Deserunt laboris sunt pariatur ad Lorem et reprehenderit quis. Velit nostrud duis consectetur Lorem excepteur eiusmod qui. Fugiat ex minim velit exercitation laborum proident laboris eu adipisicing mollit do occaecat.
+            <div className={props.mobile ? "homeNavMobile" : "homeNav"}>
+                <Link to="/music" style={{textDecoration: "none", color: "white"}}><span id="musicLink">Music</span></Link>
+                <span id="blogLink">Blog</span>
+                <span id="aboutLink">About</span>
+                <span id="socialsLink">Socials</span>
+            </div>
+            
+            <div className="introText" style={{fontSize: props.mobile ? "10pt": "12pt", lineHeight: props.mobile ? "1.3": "1.6"}}>
+                <p>
+                    Ut esse eu reprehenderit sunt amet Lorem enim do exercitation dolor dolore cupidatat. Tempor nulla ex fugiat duis anim. Qui adipisicing nisi veniam eu excepteur dolor ad duis anim Lorem commodo laboris. Nostrud mollit cillum velit cillum. Nulla aliqua ad amet elit esse cupidatat est enim ullamco commodo officia labore. In aute fugiat enim tempor do et.
 
-Qui aliqua incididunt sit adipisicing elit non. Non ex esse dolore sint amet cupidatat eu enim qui enim. Tempor velit consectetur eiusmod ex commodo ullamco aliqua nostrud nostrud ea voluptate consequat consectetur eiusmod. Sunt incididunt minim irure incididunt labore culpa commodo esse cillum non nulla. Aliquip aliquip irure irure veniam culpa laborum laborum sint minim sint pariatur velit nisi in.
+                    Amet mollit duis minim dolor sunt nisi magna nulla dolore officia enim esse labore officia. Minim exercitation amet culpa deserunt proident sit laborum. Tempor ad elit minim tempor.
 
-Tempor adipisicing minim enim nisi. Aliqua aliqua do cupidatat ut ex consequat proident magna anim est quis. Cillum aliqua labore dolore quis ad dolore enim in cupidatat ex occaecat. Officia eiusmod enim eu fugiat. Amet quis in dolor aliquip ad non pariatur cillum labore sunt adipisicing.
-
-Esse dolor proident elit esse proident eu proident non enim. Reprehenderit nulla est mollit non laborum Lorem adipisicing. Consectetur aliquip laboris voluptate consequat proident non ea enim do sit qui ipsum incididunt.
+                    Laboris ex sint ullamco magna commodo Lorem. Esse do est cupidatat labore veniam duis ex nisi minim aute commodo. Labore est duis aliqua sunt reprehenderit tempor duis enim dolore enim occaecat ullamco. Anim occaecat officia qui esse nulla id et. Est ea cillum reprehenderit quis tempor labore non. Ea incididunt fugiat deserunt pariatur duis et in nisi irure duis Lorem do veniam exercitation. Nulla exercitation amet nulla cillum ex sunt occaecat id nisi ipsum amet aliquip.
+                </p>
+            </div>
         </div>
+        
     )
 }
 
