@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: Cambria;
 }
 
 .fadingBackgrounds {
@@ -268,22 +269,17 @@ transition: all ease 0.8s;
   left: 0;
   object-fit: cover;
   position: absolute;
-  /* background-size: cover;
-  
-  
-  
-  */
 }
 
 .musicPageContent {
   color: white;
   position: relative;
-  transform: translateY(-50%);
-  margin-top: 30vh;
+  margin-top: max(25vh, 150px);
+  text-align: center;
 }
 
 
-/****/
+/**** Video container css */
 
 .videoContainer {
   color: rgb(255, 255, 255);
@@ -292,31 +288,11 @@ transition: all ease 0.8s;
   margin-bottom: 15vh;
 }
 
-.videoText {
-  padding-left: 2vw;
-  font-size: 11px;
-  display: block; 
-}
-
-#videoTitle {
-  margin-top: 20px;
-  font-size: 15pt;
-}
-
-video {
+iframe {
   margin-left: 20%;
   vertical-align: top; 
   display: inline-block;
   max-width: 40vw;
   max-height: 30vh;
   border: .1px solid white
-}
-
-.center {  
-  position: relative;
-  top: 50%;
-}
-.btnText {
-  vertical-align: middle; 
-  display: inline-block;
 }

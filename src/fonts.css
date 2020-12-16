@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Tangerine&display=swap');
+
+.reelTitle {
+    font-family: 'Tangerine';
+    letter-spacing: 2px;
+    font-size: 35pt;
+}

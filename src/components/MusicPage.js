@@ -4,7 +4,7 @@ import MediaQuery from "react-responsive"
 import video1 from "../videos/video1.mp4"
 import VideoContainer from "./VideoContainer"
 
-import Headroom from "react-headroom"
+import "../fonts.css"
 
 const MusicPage = () => {
 
@@ -13,44 +13,50 @@ const MusicPage = () => {
     // format of clips:
     /*
      clip: {
-        source: <binary data>,
-        video: true/false,
-        title: "Piano clip",
-        date: "12/2020"
+        id: "" <source video id to look use>
+        type: "" <source its from, eg: youtube>
      }
+
+     example:
+     const firstVideo = {
+        id: "tEA2prf_x48",
+        type: "youtube",
+    }
+
     */
    const firstVideo = {
-       source: video1,
-       video: true,
-       title: "piano clip~",
-       date: "12/2020"
-   }
+        id: "tEA2prf_x48",
+        type: "youtube",
+    }
+
    const secondVideo = {
-    source: video1,
-    video: true,
-    title: "piano clip 2~",
-    date: "12/2020"
-}
-    const clipList = [firstVideo, secondVideo]
+        id: "ewBulJdtGlM",
+        type: "youtube"
+    }
+
+    const thirdVideo = {
+        id: "2QKARCPO3sA",
+        type: "youtube"
+    }
+
+    const clipList = [firstVideo, secondVideo, thirdVideo]
 
     return (
         <div className="musicPage">
-            <MediaQuery minDeviceWidth={769}><NavBar mobile={false} /></MediaQuery>
-            <MediaQuery maxDeviceWidth={768}><NavBar mobile={true} /></MediaQuery>
+            <MediaQuery minDeviceWidth={769}>
+                <NavBar mobile={false} />
+            </MediaQuery>
+            <MediaQuery maxDeviceWidth={768}>
+                <NavBar mobile={true} />
+            </MediaQuery>
+
             
             <div className="musicPageContent">
-                {clipList.map((clip, i) =>
-                    clip.video ?
-                    <VideoContainer clip={clip} />
-                    :
-                    <div key={i}>
-                        <audio>
-                            <source src={clip.source} type="audio/mpeg"></source>
-                        </audio>
-                    </div>
-                )}
-                
+                <h1 className="reelTitle">Pinned</h1>
+                <VideoContainer clips={clipList} />
             </div>
+
+            
         </div>
 
         

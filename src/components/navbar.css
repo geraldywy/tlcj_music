@@ -9,12 +9,11 @@ nav {
 }
 
 #brandTopLeft {
+    float: left;
     z-index: 1;
     display: inline;
     height: 10vh;
     margin-left: 5vw;
-    top: 20px;
-    left: 5px;
     animation-name: appear;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -28,9 +27,9 @@ nav {
     justify-content: flex-end;
     z-index: 1; /* stack order top */
     display: inline;
-    position: absolute;
-    right: 0;
-    left: 100px;
+    /* position: absolute; */
+    float: right;
+    margin-right: clamp(350px, 15vw, 400px); /* min, preferred, max */
     justify-content: center;
     animation-name: appear;
     animation-duration: 2.5s;
@@ -39,14 +38,17 @@ nav {
 
 /** to edit fixed position */
 .navbarMobile {
+    border: 2px solid blue;
     color: white;
     font-size: 12pt;
     padding: 2px;
     position: fixed;
     justify-content: flex-end;
     z-index: 1; /* stack order top */
-    display: flex;
-    right: 0;
+    display: inline;
+    float: right;
+    right: 100px;
+    margin-top: -20px;
     justify-content: center;
     animation-name: appear;
     animation-duration: 2.5s;
@@ -55,7 +57,8 @@ nav {
 
 .navbarItem {
     display: inline;
-    margin-right: 7%;
+    position: relative;
+    padding-right: 20%;
     margin-top: 15px;
     padding-top: 10px;
     letter-spacing: 1px;
@@ -67,7 +70,7 @@ nav {
     position: absolute;
     display: block;
     margin-top: 15px;
-    padding-top: 10px;
+    padding-top: 0px;
     letter-spacing: 1px;
     font-family: Cambria;
 }
@@ -76,7 +79,8 @@ nav {
     box-shadow: inset 0 0 0 0 #024112;
 	-webkit-transition: all ease 0.8s;
 	-moz-transition: all ease 0.8s;
-	transition: all ease 0.8s;
+    transition: all ease 0.8s;
+    
 }
 
 .navbarMobileItem#musicLinkTop {
@@ -144,7 +148,7 @@ nav {
     box-shadow: inset 0 0 0 0 #410205;
 	-webkit-transition: all ease 0.8s;
 	-moz-transition: all ease 0.8s;
-	transition: all ease 0.8s;
+    transition: all ease 0.8s;
 }
 
 .navbarMobileItem#socialsLinkTop {
