@@ -47,8 +47,23 @@ const MusicPage = () => {
     // max 3 pinned videos
     const clipList = [firstVideo, thirdVideo, fourthVideo]
 
+    // nid to use inline style to access process env variable
+    const bgCSS = {
+        background: `url(${process.env.REACT_APP_SERVER_URL}/static/images/pic2.jpg) no-repeat center center fixed`,
+        WebkitBackgroundSize: "cover",
+        MozBackgroundSize: "cover",
+        OBackgroundSize: "cover",
+        backgroundSize: "cover",
+        minWidth: "100%",
+        minHeight: "100%",
+        top: "0",
+        left: "0",
+        objectFit: "cover",
+        position: "absolute"
+      }
+
     return (
-        <div className="musicPage">
+        <div className="musicPage" style={bgCSS}>
             <MediaQuery minDeviceWidth={769}>
                 <NavBar mobile={false} />
             </MediaQuery>

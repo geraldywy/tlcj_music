@@ -4,10 +4,10 @@ import "./navbar.css";
 import {Link} from "react-router-dom"
 import Headroom from "react-headroom"
 
-import sigLogo from "../images/sig-logo.jpg"
-
 const NavBar = (props) => {
     
+    const sigLogo = process.env.REACT_APP_SERVER_URL + "/static/images/sig-logo.jpg"
+
     return (
         <Headroom>
             <nav>
