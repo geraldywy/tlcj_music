@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/tlcj_music/static/css/main.6a242927.chunk.css",
-    "main.js": "/tlcj_music/static/js/main.90ba0969.chunk.js",
-    "main.js.map": "/tlcj_music/static/js/main.90ba0969.chunk.js.map",
-    "runtime-main.js": "/tlcj_music/static/js/runtime-main.ee3ed0e8.js",
-    "runtime-main.js.map": "/tlcj_music/static/js/runtime-main.ee3ed0e8.js.map",
-    "static/css/2.d9ad5f5c.chunk.css": "/tlcj_music/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.99ff03b4.chunk.js": "/tlcj_music/static/js/2.99ff03b4.chunk.js",
-    "static/js/2.99ff03b4.chunk.js.map": "/tlcj_music/static/js/2.99ff03b4.chunk.js.map",
+    "main.css": "/tlcj_music/static/css/main.d957cde7.chunk.css",
+    "main.js": "/tlcj_music/static/js/main.fd56781c.chunk.js",
+    "main.js.map": "/tlcj_music/static/js/main.fd56781c.chunk.js.map",
+    "runtime-main.js": "/tlcj_music/static/js/runtime-main.6154697a.js",
+    "runtime-main.js.map": "/tlcj_music/static/js/runtime-main.6154697a.js.map",
+    "static/css/2.55d8add8.chunk.css": "/tlcj_music/static/css/2.55d8add8.chunk.css",
+    "static/js/2.b491ce45.chunk.js": "/tlcj_music/static/js/2.b491ce45.chunk.js",
+    "static/js/2.b491ce45.chunk.js.map": "/tlcj_music/static/js/2.b491ce45.chunk.js.map",
+    "static/js/3.1a75c86f.chunk.js": "/tlcj_music/static/js/3.1a75c86f.chunk.js",
+    "static/js/3.1a75c86f.chunk.js.map": "/tlcj_music/static/js/3.1a75c86f.chunk.js.map",
     "index.html": "/tlcj_music/index.html",
-    "precache-manifest.c3e49f01ed82df6544e11f7c8b4aafce.js": "/tlcj_music/precache-manifest.c3e49f01ed82df6544e11f7c8b4aafce.js",
-    "service-worker.js": "/tlcj_music/service-worker.js",
-    "static/css/2.d9ad5f5c.chunk.css.map": "/tlcj_music/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.6a242927.chunk.css.map": "/tlcj_music/static/css/main.6a242927.chunk.css.map",
-    "static/js/2.99ff03b4.chunk.js.LICENSE.txt": "/tlcj_music/static/js/2.99ff03b4.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/tlcj_music/static/media/logo.ee7cd8ed.svg"
+    "static/css/2.55d8add8.chunk.css.map": "/tlcj_music/static/css/2.55d8add8.chunk.css.map",
+    "static/css/main.d957cde7.chunk.css.map": "/tlcj_music/static/css/main.d957cde7.chunk.css.map",
+    "static/js/2.b491ce45.chunk.js.LICENSE.txt": "/tlcj_music/static/js/2.b491ce45.chunk.js.LICENSE.txt",
+    "static/media/video1.0f0aa679.mp4": "/tlcj_music/static/media/video1.0f0aa679.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.ee3ed0e8.js",
-    "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.99ff03b4.chunk.js",
-    "static/css/main.6a242927.chunk.css",
-    "static/js/main.90ba0969.chunk.js"
+    "static/js/runtime-main.6154697a.js",
+    "static/css/2.55d8add8.chunk.css",
+    "static/js/2.b491ce45.chunk.js",
+    "static/css/main.d957cde7.chunk.css",
+    "static/js/main.fd56781c.chunk.js"
   ]
 }
