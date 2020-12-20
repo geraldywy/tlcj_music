@@ -13,11 +13,20 @@ const NavBar = (props) => {
             <nav>
                 <Link to="/"><img id="brandTopLeft" src={sigLogo} alt="signatureLogo" /></Link>
 
-                <div className={props.mobile ? "navbarMobile" : "navbar"}>   
-                    <span className={props.mobile ? "navbarMobileItem": "navbarItem"} id="musicLinkTop" >Music</span>
-                    <span className={props.mobile ? "navbarMobileItem": "navbarItem"} id="blogLinkTop" >Blog</span>
-                    <span className={props.mobile ? "navbarMobileItem": "navbarItem"} id="aboutLinkTop" >About</span>
-                    <span className={props.mobile ? "navbarMobileItem": "navbarItem"} id="socialsLinkTop" >Socials</span>
+                <div className={props.mobile ? "navbarMobile" : "navbar"}>
+                    <Link to="/music">
+                        <span className={props.mobile ? "navbarMobileItem": "navbarItem"} id="musicLinkTop" >Music</span>
+                    </Link>
+                    <Link to="/blog">
+                        <span className={props.mobile ? "navbarMobileItem": "navbarItem"} id="blogLinkTop" >Blog</span>
+                    </Link>
+                    <Link to="/about">
+                        <span className={props.mobile ? "navbarMobileItem": "navbarItem"} id="aboutLinkTop" >About</span>
+                    </Link>
+                    <Link to="/socials" >
+                        <span className={props.mobile ? "navbarMobileItem": "navbarItem"} id="socialsLinkTop" >Socials</span>
+                    </Link>
+                    
                 </div> 
             
             </nav> 

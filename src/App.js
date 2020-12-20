@@ -1,7 +1,7 @@
 import React from "react"
 import Home from "./components/Home"
 import MusicPage from "./components/MusicPage"
-import Test from "./components/Test"
+import Socials from "./components/Socials"
 
 import {
   BrowserRouter as Router,
@@ -15,6 +15,9 @@ function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/socials">
+          <Socials />
+        </Route>
         <Route path="/music">
           <MusicPage />
         </Route>

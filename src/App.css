@@ -262,7 +262,7 @@ transition: all ease 0.8s;
   position: relative;
   margin-top: max(25vh, 150px);
   text-align: center;
-  padding-bottom: 25%;
+  padding-bottom: 15%;
 }
 
 .colContainer {
@@ -304,4 +304,40 @@ iframe {
   max-width: 40vw;
   max-height: 30vh;
   border: .1px solid white
+}
+
+/** Socials Page style sheet **/
+.socialPanels {
+  position: relative;
+  margin-top: max(45vh, 150px);
+  text-align: center;
+  color: white;
+  margin-bottom: 20%;
+}
+
+.mobileSocialPanels {
+  position: relative;
+  margin-top: min(45vh, 200px);
+  text-align: center;
+  color: white;
+  margin-bottom: 20%;
+}
+
+.mobileSocialPanel {
+  position: relative;
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+}
+
+.socialPanel {
+  display: inline;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.socialsText {
+  margin-left: 10px;
+  letter-spacing: 2px;
+  font-size: 16pt;
 }
