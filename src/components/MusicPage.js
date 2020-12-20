@@ -6,6 +6,7 @@ import video1 from "../videos/video1.mp4"
 import VideoContainer from "./VideoContainer"
 
 import "../fonts.css";
+import Footer from "./Footer"
 
 // nid to use inline style to access process env variable
 const bgCSS = {
@@ -70,7 +71,7 @@ const MusicPage = () => {
     }, [])
 
     return (
-        <div className="musicPage" style={bgCSS}>
+        <div style={bgCSS}>
             <MediaQuery minDeviceWidth={769}>
                 <NavBar mobile={false} />
             </MediaQuery>
@@ -109,7 +110,7 @@ const MusicPage = () => {
                 </div>
             </div>
             
-            
+            <Footer />
         </div>
 
         

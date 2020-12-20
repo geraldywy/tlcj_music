@@ -2,7 +2,9 @@ import React from "react"
 import MediaQuery from "react-responsive"
 import NavBar from "./NavBar"
 import SocialMediaPanel from "./SocialMediaPanel"
-import {  faFacebookF, faTwitter, faSoundcloud, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faTwitter, faSoundcloud, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
+import Footer from "./Footer"
 
 // nid to use inline style to access process env variable
 const bgCSS = {
@@ -70,6 +72,7 @@ const Socials = (props) => {
                 
             </MediaQuery>
             
+            <Footer />
         </div>
     )
 }

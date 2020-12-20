@@ -1,7 +1,7 @@
 import React from "react"
 import MediaQuery from "react-responsive"
 import HomePanel from "./HomePanel"
-
+import Footer from "./Footer"
 
 const Home = () => {
     console.log(process.env)
@@ -14,6 +14,8 @@ const Home = () => {
             <MediaQuery minDeviceWidth={541}><HomePanel mobile={false} /></MediaQuery>
             <MediaQuery maxDeviceWidth={540}><HomePanel mobile={true} /></MediaQuery>
 
+            <Footer fixed={true} />
+
             <div className="fadingBackgrounds">
                 {[1,2,3,4,5,6,7,8].map((i) => 
                     <div>
@@ -21,6 +23,8 @@ const Home = () => {
                     </div>
                     )}
             </div>
+
+            
         </div>
     )
 }

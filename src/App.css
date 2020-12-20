@@ -262,7 +262,7 @@ transition: all ease 0.8s;
   position: relative;
   margin-top: max(25vh, 150px);
   text-align: center;
-  padding-bottom: 15%;
+  margin-bottom: 15%;
 }
 
 .colContainer {
@@ -340,4 +340,32 @@ iframe {
   margin-left: 10px;
   letter-spacing: 2px;
   font-size: 16pt;
+}
+
+#footerFixed {
+  opacity: 0.5;
+  z-index: 1;
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  bottom: 1%;
+  text-align: center;
+  color: white;
+  margin: auto;
+  animation-name: appearPartial;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+#footer {
+  opacity: 0.5;
+  z-index: 1;
+  position: relative;
+  bottom: min(2vh, 5px);
+  text-align: center;
+  color: white;
+  margin: auto;
+  animation-name: appearPartial;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
