@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tlcj_music/static/css/main.d957cde7.chunk.css",
-    "main.js": "/tlcj_music/static/js/main.6a76550d.chunk.js",
-    "main.js.map": "/tlcj_music/static/js/main.6a76550d.chunk.js.map",
+    "main.js": "/tlcj_music/static/js/main.5cf256bf.chunk.js",
+    "main.js.map": "/tlcj_music/static/js/main.5cf256bf.chunk.js.map",
     "runtime-main.js": "/tlcj_music/static/js/runtime-main.acf28e36.js",
     "runtime-main.js.map": "/tlcj_music/static/js/runtime-main.acf28e36.js.map",
     "static/css/2.55d8add8.chunk.css": "/tlcj_music/static/css/2.55d8add8.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.55d8add8.chunk.css",
     "static/js/2.402753e0.chunk.js",
     "static/css/main.d957cde7.chunk.css",
-    "static/js/main.6a76550d.chunk.js"
+    "static/js/main.5cf256bf.chunk.js"
   ]
 }
