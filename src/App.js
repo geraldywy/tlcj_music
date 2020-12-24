@@ -4,16 +4,19 @@ import MusicPage from "./components/MusicPage"
 import Socials from "./components/Socials"
 
 import {
-  BrowserRouter as Router,
+  Router as Router,
   Switch,
   Route
 } from "react-router-dom";
 
-import "./App.css"
+import "./App.css";
+import createBrowserHistory from 'history/createBrowserHistory';
+
+const history = createBrowserHistory({ basename: '/tlcj_music' });
 
 function App() {
   return (
-    <Router>
+    <Router history={history}>
       <Switch>
         <Route path="/socials">
           <Socials />
