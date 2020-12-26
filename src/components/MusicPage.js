@@ -71,49 +71,48 @@ const MusicPage = () => {
     }, [])
 
     return (
-        <div style={bgCSS}>
-            <MediaQuery minDeviceWidth={769}>
-                <NavBar mobile={false} />
-            </MediaQuery>
-            <MediaQuery maxDeviceWidth={768}>
-                <NavBar mobile={true} />
-            </MediaQuery>
-            
-            <div className="musicPageContent">
-                <h1 className="reelTitle">Pinned</h1>
-                <VideoContainer clips={pinnedList} />
+        <div className="appearSlow">
+            <div style={bgCSS}>
+                <MediaQuery minDeviceWidth={769}>
+                    <NavBar mobile={false} />
+                </MediaQuery>
+                <MediaQuery maxDeviceWidth={768}>
+                    <NavBar mobile={true} />
+                </MediaQuery>
+                
+                <div className="musicPageContent">
+                    <h1 className="reelTitle">Pinned</h1>
+                    <VideoContainer clips={pinnedList} />
 
-                <div className="colContainer">
-                    <h3 className="colTitle">Originals</h3>
-                    <ul className="songTitle">
-                        {originalList.map((org, i) => 
-                            <li className="indivTitle" key={i}>
-                                <a href={org.link} target="_blank" rel="noopener noreferrer">
-                                    {org.title}
-                                </a>
-                            </li>
-                        )}
-                    </ul>
-                </div>
+                    <div className="colContainer">
+                        <h3 className="colTitle">Originals</h3>
+                        <ul className="songTitle">
+                            {originalList.map((org, i) => 
+                                <li className="indivTitle" key={i}>
+                                    <a href={org.link} target="_blank" rel="noopener noreferrer">
+                                        {org.title}
+                                    </a>
+                                </li>
+                            )}
+                        </ul>
+                    </div>
 
-                <div className="colContainer">
-                    <h3 className="colTitle">Covers</h3>
-                    <ul className="songTitle">
-                        {coverList.map((cover, i) => 
-                            <li className="indivTitle" key={i}>
-                                <a href={cover.link} target="_blank" rel="noopener noreferrer">
-                                    {cover.title}
-                                </a>
-                            </li>
-                        )}
-                    </ul>
+                    <div className="colContainer">
+                        <h3 className="colTitle">Covers</h3>
+                        <ul className="songTitle">
+                            {coverList.map((cover, i) => 
+                                <li className="indivTitle" key={i}>
+                                    <a href={cover.link} target="_blank" rel="noopener noreferrer">
+                                        {cover.title}
+                                    </a>
+                                </li>
+                            )}
+                        </ul>
+                    </div>
                 </div>
+                <Footer />
             </div>
-            
-            <Footer />
         </div>
-
-        
     )
 }
 

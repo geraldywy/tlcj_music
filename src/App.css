@@ -106,15 +106,6 @@
   animation-delay: 0s;
 }
 
-/* .content {
-  position: relative
-} */
-
-.appear {
-  animation-name: appear;
-  animation-duration: 1s;
-}
-
 @keyframes appear {
   from {
     opacity: 0;
@@ -136,6 +127,12 @@
 .appear {
   animation-name: appear;
   animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.appearSlow {
+  animation-name: appear;
+  animation-duration: 3.5s;
   animation-fill-mode: forwards;
 }
 

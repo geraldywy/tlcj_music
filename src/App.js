@@ -2,6 +2,8 @@ import React from "react"
 import Home from "./components/Home"
 import MusicPage from "./components/MusicPage"
 import Socials from "./components/Socials"
+import Blog from "./components/Blog"
+import About from "./components/About"
 
 import {
   Router as Router,
@@ -18,6 +20,12 @@ function App() {
   return (
     <Router history={history}>
       <Switch>
+      <Route exact path="/blog">
+          <Blog />
+        </Route>
+        <Route exact path="/about">
+          <About />
+        </Route>
         <Route path="/socials">
           <Socials />
         </Route>

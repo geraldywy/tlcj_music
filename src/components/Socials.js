@@ -23,36 +23,41 @@ const bgCSS = {
 
 const socials = [
     [
-        "https://www.instagram.com/asdadlkfdkamd/",
+        "https://www.instagram.com/laychun_tan/?hl=en",
         faInstagram,
-        "INSTAGRAM"
+        "INSTA"
     ],
     [
-        "https://www.youtube.com/channel/UCIjYyZxkFucP_W-tmXg_9Ow",
+        "https://www.instagram.com/laychuncovers/?hl=en",
+        faInstagram,
+        "COVERS"
+    ],
+    [
+        "https://www.youtube.com/channel/UCICKCQ2i3eFkPXXW51p5PJg",
         faYoutube,
         "YOUTUBE"
     ],
     [
-        "https://www.facebook.com/leehsienloong/",
+        "https://www.facebook.com/laychuntan/",
         faFacebookF,
         "FACEBOOK"
     ],
     [
-        "https://soundcloud.com/user950167941",
+        "https://soundcloud.com/tan-lay-chun",
         faSoundcloud,
         "SOUNDCLOUD"
     ],
-    [
-        "https://twitter.com/trainwreckstv",
-        faTwitter,
-        "TWITTER"
-    ]
+    // [
+    //     "https://twitter.com/trainwreckstv",
+    //     faTwitter,
+    //     "TWITTER"
+    // ]
 ]
 
 const Socials = (props) => {
     
     return (
-        <div style={bgCSS}>
+        <div className="appearSlow" style={bgCSS}>
             <MediaQuery minDeviceWidth={769}>
                 <NavBar mobile={false} />
                 <div className="socialPanels">
